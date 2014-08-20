@@ -12,7 +12,8 @@
         <input type="number" ng-model="amount"> <br>
         default currency symbol ($): <span id="currency-default">{{amount | currency}}</span><br>
         custom currency identifier (USD$): <span>{{amount | currency:"USD$"}}</span><br>
-        custom filter myCurrency: <span>{{amount | myCurrency}}</span>
+        custom filter myCurrency: <span>{{amount | myCurrency}}</span><br>
+        number currency: <span>{{amount | number:2}}</span>
     </div>
     </div>
 
