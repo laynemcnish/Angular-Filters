@@ -11,11 +11,19 @@
     <div ng-controller="ClimbersCtrl">
         <input type="text" ng-model="searchText"/>
         <!--<input type="text" ng-model="search.YDS"/>-->
-        <table border="1">
+        <table border="1" style="text-align: center;">
         <tr>
             <td>YDS</td>
             <td>French</td>
-            <td>British</td>
+            <td>British-Tech</td>
+            <td>British-Adj</td>
+            <td>UIAA</td>
+            <td>Saxon</td>
+            <td>Ewbank-AUS/NZL</td>
+            <td>Ewbank-South Africa</td>
+            <td>Nordic-Finnish</td>
+            <td>Nordic-SWE/NOR</td>
+            <td>Brazilian</td>
         </tr>
             <tr ng-repeat="ratings in climbers.rating | filter:searchText">
                 <!--<tr ng-repeat="ratings in climbers.rating | filter:search">-->
@@ -24,7 +32,15 @@
                 <!--<tr ng-repeat="ratings in climbers.rating | orderBy: '-YDS' | limitTo:5 | filter:search" >-->
                 <td>{{ratings.YDS}}</td>
                 <td>{{ratings.French | uppercase}}</td>
-                <td>{{ratings.British}}</td>
+                <td>{{ratings.BritishTech}}</td>
+                <td>{{ratings.BritishAdj}}</td>
+                <td>{{ratings.UIAA}}</td>
+                <td>{{ratings.Saxon}}</td>
+                <td>{{ratings.EwbankAUSNZL}}</td>
+                <td>{{ratings.EwbankSA}}</td>
+                <td>{{ratings.NordicFinnish}}</td>
+                <td>{{ratings.NordicSWENOR}}</td>
+                <td>{{ratings.Brazilian}}</td>
             </tr>
         </table>
     </div>
