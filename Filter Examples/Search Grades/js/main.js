@@ -372,7 +372,7 @@ myApp.factory("Climbers", function(){
       French:"9b",
       BritishTech:"7b",
       BritishAdj:"E11",
-      UIAA:"XI+/XII",
+      UIAA:"XI+/XII-",
       Saxon:"XIc",
       EwbankAUSNZL:"37",
       EwbankSA:"39",

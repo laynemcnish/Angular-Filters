@@ -11,24 +11,25 @@
     <div ng-controller="ClimbersCtrl">
         <input type="text" ng-model="searchText"/>
         <!--<input type="text" ng-model="search.YDS"/>-->
+        <!--<input type="text" ng-model="search"/>-->
         <table border="1" style="text-align: center;">
-        <tr>
-            <td>YDS</td>
-            <td>French</td>
-            <td>British-Tech</td>
-            <td>British-Adj</td>
-            <td>UIAA</td>
-            <td>Saxon</td>
-            <td>Ewbank-AUS/NZL</td>
-            <td>Ewbank-South Africa</td>
-            <td>Nordic-Finnish</td>
-            <td>Nordic-SWE/NOR</td>
-            <td>Brazilian</td>
-        </tr>
+        <thead>
+            <th>YDS</th>
+            <th>French</th>
+            <th>British-Tech</th>
+            <th>British-Adj</th>
+            <th>UIAA</th>
+            <th>Saxon</th>
+            <th>Ewbank-AUS/NZL</th>
+            <th>Ewbank-South Africa</th>
+            <th>Nordic-Finnish</th>
+            <th>Nordic-SWE/NOR</th>
+            <th>Brazilian</th>
+        </thead>
             <tr ng-repeat="ratings in climbers.rating | filter:searchText">
                 <!--<tr ng-repeat="ratings in climbers.rating | filter:search">-->
                 <!--<tr ng-repeat="ratings in climbers.rating | orderBy : '-YDS' : true">-->
-                <!--<tr ng-repeat="ratings in climbers.rating | limitTo:5" > &lt;!&ndash; Can do -5 for last five &ndash;&gt;-->
+                <!--<tr ng-repeat="ratings in climbers.rating | limitTo:5" > <!-- Can do -5 for last five -->-->
                 <!--<tr ng-repeat="ratings in climbers.rating | orderBy: '-YDS' | limitTo:5 | filter:search" >-->
                 <td>{{ratings.YDS}}</td>
                 <td>{{ratings.French | uppercase}}</td>
