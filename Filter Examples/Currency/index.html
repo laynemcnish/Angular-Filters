@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+
+<div ng-app="currencyApp">
+
+    <div ng-controller="currencyCtrl">
+        <input type="number" ng-model="amount"> <br>
+        default currency symbol ($): <span id="currency-default">{{amount | currency}}</span><br>
+        custom currency identifier (USD$): <span>{{amount | currency:"USD$"}}</span><br>
+        custom filter myCurrency: <span>{{amount | myCurrency}}</span>
+    </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
