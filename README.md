@@ -2,7 +2,7 @@
 
 The filter examples include:
 
-- Currency: demonstrates basic currency formatting as well as a custom formatting options which showcases some of the filter pitfalls.
+- Currency: demonstrates basic currency formatting as well as a custom formatting option which showcases some of the filter pitfalls.
  
 - Reverse Letter: A simple custom filter
 
